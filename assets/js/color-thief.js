@@ -1,6 +1,6 @@
 'use strict'
 
-import ColorThief from '../../node_modules/colorthief/dist/color-thief.mjs'
+ import ColorThief from '../../node_modules/colorthief/dist/color-thief.mjs';
 
 var colorThief = new ColorThief();
 
