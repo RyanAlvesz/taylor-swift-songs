@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "colorthief": "^2.4.0",
-    "homepage": "."
-  }
+    "colorthief": "^2.4.0"
+  },
+  "homepage": "https://github.com/RyanAlvesz/taylor-swift-songs"
 }
