@@ -1,0 +1,106 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--background)
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 60vw;
+    height: 80vh;
+}
+
+.album-info{
+    display: flex;
+    gap: 12px;
+}
+    
+.album-img{
+    width: 20vh;
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.info span{
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.album-title{
+    font-size: 1.8rem;
+    color: var(--white);
+    font-family: var(--main-font);
+}
+
+.list-songs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: scroll;
+}
+
+.song{
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding: 12px 24px;
+    color: var(--white);
+    font-family: var(--main-font);
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: var(--dark-gray);
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+.song:hover{
+    background-color: var(--dark-gray-hover);
+}
+
+.song-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 1rem;
+}
+
+.song-info span:first-child{
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    
+    main{
+        padding: 0 24px;
+    }
+
+    .album{
+        min-width: 90vw;
+    }
+
+    .song{
+        font-size: 1rem;
+    }
+    
+}

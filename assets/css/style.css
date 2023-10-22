@@ -1,0 +1,182 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-rows: 1fr auto 1fr;
+    background-color: var(--background);
+    font-family: var(--main-font);
+    padding: 0 24px;
+}
+
+header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 100%;
+    padding-bottom: 24px;
+}
+
+h1{
+    height: 3.13rem;
+}
+
+h1 img{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 24px;
+}
+
+.album{
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.album:hover{
+    background-color: var(--dark-gray-hover);
+}
+
+.album a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 13px 24px 13px;
+    gap: 24px;
+}
+
+.album-img{
+    width: 20vh;
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.album-title{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1150px) {
+    
+    .album-img{
+        width: 17vh;
+        height: 17vh;
+    }
+
+    .album a{
+        padding: 18px 13px 22px 13px;
+    }
+
+    .album-title{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+    
+    .album-img{
+        width: 13vh;
+        height: 13vh;
+    }
+
+    .album a{
+        padding: 18px 13px 22px 13px;
+    }
+
+    .album-title{
+        font-size: 1.2rem;
+    }
+
+    .album-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 950px) {
+    
+    header{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .album-img{
+        width: 22vh;
+        height: 22vh;
+    }
+
+    .album a{
+        padding: 18px 13px 22px 13px;
+    }
+
+    .album-title{
+        font-size: 1.2rem;
+    }
+
+    .album-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    header{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        width: 90vw;
+        align-items: center;
+    }
+
+    h1{
+      height: 3rem;  
+    }
+
+    .album-img{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .album-title{
+        font-size: 1.4rem;
+    }
+
+    .album-container{
+        grid-template-columns: 1fr;
+    }
+
+}

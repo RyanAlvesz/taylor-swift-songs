@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --background: #121212;
+    --dark-gray: #181818;
+    --dark-gray-hover: #272727;
+    --white: #FFFFFF;
+    --main-font: 'Inter', sans-serif;
+    --taylor-swift-font: 'Sacramento', cursive;
+    --fearless-font: 'Montserrat', sans-serif;
+    --speak-now-font: 'Rochester', cursive;
+    --red-font: 'Anton', sans-serif;
+    --1989-font: 'Permanent Marker', cursive;
+    --reputation-font: 'UnifrakturMaguntia', cursive;
+    --lover-font: 'Satisfy', cursive;
+    --folklore-font: 'IM Fell DW Pica', serif;
+    --evermore-font: 'IM Fell DW Pica', serif;
+    --midnights-font: 'Inter', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
