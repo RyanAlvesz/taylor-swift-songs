@@ -64,6 +64,7 @@ main{
     padding: 13px 0;
     min-height: calc(80vh - 64px - 36px - 13px - 13vh);
     overflow-y: scroll;
+    width: 100%;
 }
 
 .lyrics::-webkit-scrollbar{
