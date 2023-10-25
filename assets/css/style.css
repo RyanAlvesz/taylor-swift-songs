@@ -22,8 +22,13 @@ header{
     padding-bottom: 24px;
 }
 
-h1{
+h1 a{
+    display: block;
     height: 3.13rem;
+}
+
+h1 a picture {
+    height: 100%;
 }
 
 h1 img{
